@@ -18,7 +18,11 @@ def state():
     ws.connect ("ws://10.150.151.142/") # 아두이노 서버 연결
 
     onOff = request.form["onOff"] # 사용자가 입력한 버튼 값 (state)
+<<<<<<< HEAD
     ws.send(num_state) # state 값 전송
+=======
+    ws.send(num_state) state 값 전송
+>>>>>>> 04a4daf4846f20f4975202702ae0bb1871711df0
     result = ws.recv() 
     print (result)
 
@@ -32,4 +36,8 @@ def state():
 
   return render_template("index.html",state = onOff)
 if __name__ == '__main__':
+<<<<<<< HEAD
   app.run(port=3000,debug=True) # port 번호 3000
+=======
+  app.run(port=3000,debug=True) # port 번호 3000
+>>>>>>> 04a4daf4846f20f4975202702ae0bb1871711df0
